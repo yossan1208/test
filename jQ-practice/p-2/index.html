@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.I.BLOG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <script src="/jquery.bxSlider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".slider").bxSlider({
+        auto: true,
+        mode: 'horizontal',
+        speed: 2000,
+        slideWidth: 1900,
+        infiniteLoop: true
+      });
+    });
+  </script>
+</head>
+
+<!-- body -->
+<body>
+  <header>
+    <div class="header-image">
+      <img class="title-img" src="image/diblog_logo.jpg">
+    </div>
+    <nav class="menu-bar">
+      <ul class="nav-ul">
+        <li class="nav-li"><a link="#">トップ</a></li>
+        <li class="nav-li"><a link="#">プロフィール</a></li>
+        <li class="nav-li"><a link="#">D.I.Blogについて</a></li>
+        <li class="nav-li"><a link="#">登録フォーム</a></li>
+        <li class="nav-li"><a link="#">問い合わせ</a></li>
+        <li class="nav-li"><a link="#">その他</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="left">
+      <div class="title-h1">
+        <h1>プログラミングに役立つ書籍</h1>
+      </div>
+      <div class="main-contents">
+        <div class="slider">
+            <div><img class="slider-img" src="image/jQuery_image1.jpg"></div>
+            <div><img class="slider-img" src="image/jQuery_image2.jpg"></div>
+            <div><img class="slider-img" src="image/jQuery_image3.jpg"></div>
+            <div><img class="slider-img" src="image/jQuery_image4.jpg"></div>
+            <div><img class="slider-img" src="image/jQuery_image5.jpg"></div>
+          </div>
+      </div>
+      <div class="article">
+        <p class="article-text">記事中身</p>
+        <div class="article-gray-box">
+          <div class="box-upper">
+            <div class="img-box">
+              <img src="image/pic1.jpg" class="article-img">
+              <p class="image-text">ドメイン取得方法</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic2.jpg" class="article-img">
+              <p class="image-text">快適な職場環境</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic3.jpg" class="article-img">
+              <p class="image-text">Linuxの基礎</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic4.jpg" class="article-img">
+              <p class="image-text">マーケティング入門</p>
+            </div>
+          </div>
+          <div class="box-lower">
+            <div class="img-box">
+              <img src="image/pic5.jpg" class="article-img">
+              <p class="image-text">アクティブラーニング</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic6.jpg" class="article-img">
+              <p class="image-text">CSSの効率的な勉強方法</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic7.jpg" class="article-img">
+              <p class="image-text">リーダブルコードとは</p>
+            </div>
+            <div class="img-box">
+              <img src="image/pic8.jpg" class="article-img">
+              <p class="image-text">HTML5の可読性</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- side bar -->
+    <div class="right">
+      <div class="article-list">
+        <h2>人気の記事</h2>
+        <ul class="side-bar-ul">
+          <li class="side-nav-li">PHPおすすめ本</li>
+          <li class="side-nav-li">PHP MyAdminの使い方</li>
+          <li class="side-nav-li">いま人気のエディタTops</li>
+          <li class="side-nav-li">HTMLの基礎</li>
+        </ul>
+      </div>
+      <div class="article-list">
+        <h2>オススメリンク</h2>
+        <ul class="side-bar-ul">
+          <li class="side-nav-li">ディーアイワークス株式会社</li>
+          <li class="side-nav-li">XAMPPのダウンロード</li>
+          <li class="side-nav-li">Eclipseのダウンロード</li>
+          <li class="side-nav-li">Braketsのダウンロード</li>
+        </ul>
+      </div>
+      <div class="article-list">
+        <h2>カテゴリ</h2>
+        <ul class="side-bar-ul">
+          <li class="side-nav-li">HTML</li>
+          <li class="side-nav-li">PHP</li>
+          <li class="side-nav-li">MySQL</li>
+          <li class="side-nav-li">JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p class="copyright-text">Copyright D.I.works | D.I. blog is the one which provides A to Z about programming</p>
+  </footer>
+
+</body>
+</html>
